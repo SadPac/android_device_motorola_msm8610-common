@@ -6,10 +6,10 @@
 
 # CMHW
 /sys/devices/platform/kcal_ctrl\.0(/.*)?                    u:object_r:display_sysfs:s0
-/sys/devices/virtual/timed_output/vibrator/vtg_level        u:object_r:vibeamp_sysfs:s0
 
 # FSG (regional modem config) blobs
 /fsg(/.*)?                                                  u:object_r:moto_firmware:s0
+
 
 # MPDecision
 /data/system/default_values                                 u:object_r:mpctl_data_file:s0

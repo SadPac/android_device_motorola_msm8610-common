@@ -1,0 +1,2 @@
+allow kernel unlabeled:file { getattr open };
+allow kernel untrusted_app:fd use;
