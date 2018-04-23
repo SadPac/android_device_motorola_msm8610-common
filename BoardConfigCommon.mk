@@ -17,7 +17,7 @@
 # This file sets variables that control the way modules are built
 # thorughout the system. It should not be used to conditionally
 # disable makefiles (the proper mechanism to control what gets
-# included in a build is to use PRODUCT_PACKAGES in a product
+# the included in a build is to use PRODUCT_PACKAGES in a product
 # definition file).
 #
 
