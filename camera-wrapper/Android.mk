@@ -7,7 +7,7 @@ LOCAL_SRC_FILES := \
     CameraWrapper.cpp
 
 LOCAL_SHARED_LIBRARIES := \
-    libhardware liblog libcamera_client libgui libutils libbase
+    libbase \
     libhardware \
     liblog \
     libcamera_client \
