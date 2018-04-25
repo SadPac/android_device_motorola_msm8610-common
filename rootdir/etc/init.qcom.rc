@@ -466,21 +466,25 @@ service netmgrd /system/bin/netmgrd
     class main
     user root
     group root wifi wakelock radio inet
+    seclabel u:r:netmgrd:s0
 
 service qcamerasvr /system/bin/mm-qcamera-daemon
     class late_start
     user camera
     group camera system inet input graphics
-
+    seclabel u:r:mm-qcamerad:s0
+    
 service qmuxd /system/bin/qmuxd
     class main
     user radio
     group radio audio bluetooth gps oem_2950
+    seclabel u:r:qmuxd:s0
 
 service qseecomd /system/bin/qseecomd
     class late_start
     user root
     group root
+    seclabel u:r:tee:s0
 
 service rfs_access /system/bin/rfs_access
    class core
@@ -490,6 +494,7 @@ service rfs_access /system/bin/rfs_access
 service rmt_storage /system/bin/rmt_storage
     class core
     user root
+    seclabel u:r:rmt_storage:s0
 
 on property:persist.sys.qc.sub.rdump.on=*
    write /sys/module/subsystem_restart/parameters/enable_ramdumps ${persist.sys.qc.sub.rdump.on}
@@ -506,6 +511,7 @@ service time_daemon /system/bin/time_daemon
     class late_start
     user root
     group root
+    seclabel u:r:time_daemon:s0
 
 service wcnss-service /system/bin/wcnss_service
     class late_start
