@@ -490,7 +490,8 @@ service rfs_access /system/bin/rfs_access
    class core
    user system
    group system net_raw
-
+   seclabel u:r:rfs_access:s0
+   
 service rmt_storage /system/bin/rmt_storage
     class core
     user root
