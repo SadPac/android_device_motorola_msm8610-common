@@ -1,1 +1,0 @@
-allow tree block_device:blk_file { read write };
