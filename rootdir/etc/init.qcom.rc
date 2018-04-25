@@ -425,6 +425,7 @@ service irsc_util /system/bin/irsc_util "/etc/sec_config"
     class main
     user root
     oneshot
+    seclabel u:r:irsc_util:s0
 
 service mmi-boot-sh /system/bin/sh /init.mmi.boot.sh
     class core
