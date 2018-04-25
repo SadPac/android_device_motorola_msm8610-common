@@ -37,3 +37,13 @@
 /sys/devices/f9925000.i2c/i2c-3/3-0048/temp1_input          u:object_r:sysfs_thermal:s0
 /sys/devices/f9925000.i2c/i2c-3/3-0048/temp1_max            u:object_r:sysfs_thermal:s0
 /sys/devices/f9925000.i2c/i2c-3/3-0048/temp1_max_hyst       u:object_r:sysfs_thermal:s0
+
+# Legacy
+/system/bin/rmt_storage                                               u:object_r:rmt_storage_exec:s0
+/system/bin/tftp_server                                               u:object_r:rfs_access_exec:s0
+/system/bin/adsprpcd                                                  u:object_r:adsprpcd_exec:s0
+/system/bin/netmgrd                                                   u:object_r:netmgrd_exec:s0
+/system/bin/qmuxd                                                     u:object_r:qmuxd_exec:s0
+/system/bin/mm-qcamera-daemon                                         u:object_r:mm-qcamerad_exec:s0
+/system/bin/qseecomd                                                  u:object_r:tee_exec:s0
+/system/bin/time_daemon                                               u:object_r:time_daemon_exec:s0
