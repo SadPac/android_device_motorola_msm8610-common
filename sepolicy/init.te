@@ -13,3 +13,4 @@ allow init thermal_device:chr_file write;
 allow init self:socket ioctl;
 allowxperm init self:socket ioctl msm_sock_ipc_ioctls;
 allow init debugfs:dir mounton;
+allow init block_device:lnk_file setattr;
