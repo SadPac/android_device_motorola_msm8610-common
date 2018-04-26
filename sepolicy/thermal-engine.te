@@ -2,3 +2,4 @@ allow thermal-engine sysfs_battery_supply:dir search;
 allow thermal-engine sysfs_battery_supply:file rw_file_perms;
 allow thermal-engine sysfs_batt_health:dir search;
 allow thermal-engine self:capability chown;
+allow thermal_engine sysfs_spmi_dev:dir { search read };
