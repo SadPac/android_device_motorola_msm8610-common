@@ -1,1 +1,1 @@
-allow afs_access system_file:file entrypoint;
+allow rfs_access system_file:file entrypoint;
