@@ -17,3 +17,5 @@ allow init init:socket { create bind ioctl read };
 allow init uio_device:chr_file write;
 allow init modemst1_block_device:blk_file write;
 allow init hwservicemanager:binder { call transfer };
+allow init hal_power_hwservice:hwservice_manager add;
+allow init hidl_base_hwservice:hwservice_manager add;
