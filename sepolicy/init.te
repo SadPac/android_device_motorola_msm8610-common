@@ -11,3 +11,4 @@ allow init sysfs_mpdecision:file getattr;
 allow init thermal_device:chr_file write;
 allow init kernel:system module_request;
 allow init tmpfs:lnk_file create;
+allow init debugfs:dir mounton;
