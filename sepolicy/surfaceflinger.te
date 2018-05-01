@@ -1,1 +1,2 @@
 allow surfaceflinger sysfs:file write;
+allow surfaceflinger sf_lcd_density_prop:file { read open getattr };
