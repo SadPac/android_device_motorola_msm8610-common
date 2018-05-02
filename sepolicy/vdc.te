@@ -1,1 +1,1 @@
-allow vdc kernel:system module_request;
+#allow vdc kernel:system module_request;

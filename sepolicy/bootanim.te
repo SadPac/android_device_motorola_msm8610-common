@@ -1,1 +1,2 @@
-allow bootanim device:chr_file { read write open ioctl };
+#allow bootanim device:chr_file { read write open ioctl };
+#allowxperm bootanim device:chr_file ioctl msm_socket_ipc_ioctls;
