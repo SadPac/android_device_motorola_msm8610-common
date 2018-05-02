@@ -26,7 +26,12 @@
 #
 
 import init.qcom.usb.rc
+<<<<<<< HEAD
 import init.device.rc
+=======
+import init.target.rc
+>>>>>>> 9c1ba8b... rootdir: Introduce 'SafailNet'
+import init.mmi.rc
 import init.safailnet.rc
 
 on early-init
